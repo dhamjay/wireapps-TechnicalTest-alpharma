@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "5c2f47bb-27f6-44ce-87f8-7a717e600b63",
+		"name": "alpharma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8223845"
+	},
+	"item": [
+		{
+			"name": "medications",
+			"item": [
+				{
+					"name": "medications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/medications"
+					},
+					"response": []
+				},
+				{
+					"name": "medications/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/medications/1"
+					},
+					"response": []
+				},
+				{
+					"name": "medications",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Product Item 100",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Generic Name 100",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "26",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/medications"
+					},
+					"response": []
+				},
+				{
+					"name": "medications{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "quantity",
+									"value": "311",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/medications/2"
+					},
+					"response": []
+				},
+				{
+					"name": "medications{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/medications/6"
+					},
+					"response": []
+				},
+				{
+					"name": "restore",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/medications/6/restore"
+					},
+					"response": []
+				},
+				{
+					"name": "force-delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/medications/6/force-delete"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/customers"
+					},
+					"response": []
+				},
+				{
+					"name": "customers/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/customers/3"
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Sam smith",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sam@email.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "122133144",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "123 ABC st",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "consumer",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/customers"
+					},
+					"response": []
+				},
+				{
+					"name": "customers/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "phone",
+									"value": "777777777",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/customers/3"
+					},
+					"response": []
+				},
+				{
+					"name": "customers{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/customers/6"
+					},
+					"response": []
+				},
+				{
+					"name": "restore",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/customers/6/restore"
+					},
+					"response": []
+				},
+				{
+					"name": "force-delete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/customers/6/force-delete"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "user3",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMmQ4YzcxOTkzYzBjNGI2ZmRiOWViMWJlOGEwYTg4ZTBlMzRlMzdmYzA3Zjg1NjJhNmVmNzg3NTQ2YmUyMWFjZDNlOTM5OWI4OWE4NDgzZWUiLCJpYXQiOjE3MTAyNzY2MDEuNjM4MTc1LCJuYmYiOjE3MTAyNzY2MDEuNjM4MTgxLCJleHAiOjE3NDE4MTI2MDEuNDk5OTk3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.me_fG0gezmHKt87nKxWpkXi3exqj2K7tvjTX7eO-jgJCNO-qbQNjpVlF8FZ2lsEjckyHHpNmYaCTs4VrxulxwQvUonp0dcIoCPgjaZeRKw6Guh90yghiUETsxi1lRW3QnZIeSGC3TUnP-ZU0CcWYhfn_MwvgviTI09BMb3R6HMktQyCu2z3IO9JMqpo1RhuZAAGarRE9xGkZ-Lb07ZPtvw9KjsCQX5waCR_6BdxPjI8Pek907EBlyynUhMnSr3txaNR19q3n9pH4VQYc0XRtARlp9ZuTdMimXeOQD0cDosH4xsyhuqdXnGJ2ZmJoVMSxPEGeLl5y9yP2_dtS6bOVcBKnozfBKLJ3B9Ailg8ulqOpwld6gijthQfAG6PyGyh0lZ7s8kRTwJiPKi0g7-QqTJENkcb3gCKXCQkRq-z1pgEJLQEyckgzT400A13IEMLiwXQ2H9PFIZ7wF8mCsFKfbJO4gnh5pxoqPPztMvSPu4aC3gCAbuNjtxJ_mmm3Hk3V5orJ1Inhg1z909ctnq_U4rq6S3dTfYvNXtJ-JqZifRH56Riv_Fn_l4h9NVeFzlGr9K-gXM2jnKRXwv1fVsI6zj_CvlmJkTLUPyTy8_xByrPG-G_sTu26ENjQ14HaZAn5Ob9yBKlZjRTSx9zJdAg3XwnFNUwXF28qXCYxvCc4BnQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "testval",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "me",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "123@dma.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
