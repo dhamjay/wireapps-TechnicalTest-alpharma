@@ -16,14 +16,6 @@ The users are can be grouped into three main groups acording to the operaions th
 * User roles and access/permission control is covered using Spatie.     
 * Request authorization is done using laravel's Gates.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 ### Prerequisites
@@ -47,8 +39,24 @@ The users are can be grouped into three main groups acording to the operaions th
 `php artisan migrate`     
 `php artisan db:seed`   
 
-5. Serve    
+5. Install passport     
+`php artisan passport:install`
+
+6. Serve    
 `php artisan serve`
+
+7. Import `alpharma.postman_collection.json` to Postman to test.
+
+8. First register a user by posting to   
+`http://127.0.0.1:8000/api/register `
+
+required form-data,    
+username    
+name    
+email     
+password    
+
+***Note:- make sure to copy the user's access token from the response after successful registering,  for future use***
 
 ### Dependencies
 

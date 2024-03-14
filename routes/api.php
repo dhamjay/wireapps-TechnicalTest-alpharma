@@ -20,11 +20,10 @@ use App\Http\Controllers\Api\CustomerController;
 
 Route::post('login', [LoginRegisterController::class, 'login']);
 Route::post('logout', [LoginRegisterController::class, 'logout']);
+Route::post('register', [LoginRegisterController::class, 'register']);
 
 // not available for unathorized access. Must have an access token
 Route::middleware(['auth:api'])->group(function () {
-
-    Route::post('register', [LoginRegisterController::class, 'register']);
 
     Route::resource('customers', CustomerController::class);
     Route::get('/customers/{id}/restore', [CustomerController::class, 'restore']);
