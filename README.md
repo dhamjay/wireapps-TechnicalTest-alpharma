@@ -2,19 +2,19 @@
 
 ## Description
 
-A pharmacy with the stakeholders involved are the owner, manager and cashier requires a
+A pharmacy, along with its stakeholders, including the owner, manager, and cashier, requires a
 system to streamline its business processes, involving authentication, medication inventory
 management, and customer record management. The system needs to enforce user roles and
 permissions for different actions.
 
-The solution is buit using Laravel 9.0. 
-The users are can be grouped into three main groups acording to the operaions they can perform on the system. 
+The solution is built using Laravel 9.0.     
+The users can be grouped into three main groups acording to the operations they can perform on the system. 
 
-*** Uses laravel contributed packages such as Laravel passport and spatie to manage users, user roles and permission management.
+*** It uses Laravel-contributed packages such as Laravel Passport and Spatie to manage users, user roles, and permission management.
 
-* User login and authentication/guard is followed by Laravel Passport.    
-* User roles and access/permission control is covered using Spatie.     
-* Request authorization is done using laravel's Gates.
+* User login and authentication/guard are handled by Laravel Passport.   
+* User roles and access/permission control are managed using Spatie.     
+* Request authorization is handled using Laravel's Gates.
 
 ## Installation
 
